@@ -61,10 +61,10 @@ button:focus, input:focus {
 }
 
 input {
-	border-radius: 8px;
-	background: #ffffff;
-	box-shadow:  3px 3px 12px #afafaf,
-							-3px -3px 12px #ffffff;
+	border-radius: 10px;
+	background: #ededed;
+	box-shadow: inset 4px 4px 10px #afafaf,
+		inset -4px -4px 10px #ffffff;
 }
 
 label {
@@ -76,7 +76,6 @@ input, button, select, textarea {
 	font-size: inherit;
 	-webkit-padding: 0.4em 0;
 	padding: 0.4em;
-	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 2px;

@@ -1,4 +1,6 @@
 <script>
+	import AccountBoxIcon from 'svelte-material-icons/AccountBox.svelte'
+	import KeyIcon from 'svelte-material-icons/Key.svelte'
 	const login = () => {
 		alert("hello");
 	}
@@ -6,19 +8,26 @@
 
 <main>
 	<div class="simple-modal">
-		<div class="mock-bar">
-	    
-		</div>
-
 		<div class="header">
 			<span class="title">HAT</span>
 			<span class='subtitle'>How about this?</span>
 		</div>
 		<div class="body">
-			<input type="text"
-				placeholder="login id"/>
-			<input type="text"
-				placeholder="password"/>
+			<div class="icon-input">
+				<div class="icon">
+					<AccountBoxIcon size={"2.5em"}/>
+				</div>
+				<input type="text"
+					placeholder="login id"/>
+			</div>
+			
+			<div class="icon-input">
+				<div class="icon">
+					<KeyIcon size={"2.5em"}/>
+				</div>
+				<input type="text"
+					placeholder="password"/>
+			</div>
 			<button on:click="{login}">
 				Login
 			</button>
@@ -70,8 +79,27 @@
 				justify-content: center;
 
 				input, button {
+					margin: 0.5rem 1rem 0.5rem 1rem;
+				}
+
+				.icon-input {
+					display: flex;
+					justify-content: start;
+					flex-direction: row;
+					align-items: center;
 					margin-left: 1rem;
 					margin-right: 1rem;
+
+					border-radius: 5px;
+						background: #ffffff;
+						box-shadow:  3px 3px 12px #afafaf,
+												-3px -3px 12px #ffffff;
+
+					input {
+						margin-left: 0.2rem;
+						margin-right: 0.4rem;
+						width: 100%;
+					}
 				}
 			}
 		}
