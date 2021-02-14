@@ -13,16 +13,58 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	padding: 0.6rem;
+	margin: 0.3rem;
+	border-radius: 5px;
+	background: #84c5e1;
+	box-shadow:  3px 3px 8px #3871a7,
+							-3px -3px 8px #9cd8f3;
+	color: #ffffff;
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
+	transition-duration: 0.2s;
 }
 
 a:visited {
-	color: rgb(0,80,160);
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:active {
+	padding: 0.6rem;
+	margin: 0.3rem;
+	border-radius: 5px;
+	background: #84c5e1;
+	box-shadow:  0px 0px 8px #3871a7,
+							-0px -0px 8px #9cd8f3;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+button {
+	border-radius: 5px;
+	background: #84c5e1;
+	box-shadow:  3px 3px 8px #6292a7,
+							-3px -3px 8px #9cd8f3;
+	color: #ffffff;
+	transition-duration: 0.2s;
+}
+
+button:active {
+	background: #84c5e1;
+	box-shadow:  0px 0px 8px #6292a7,
+							-0px -0px 8px #9cd8f3;
+	color: #ffffff;
+}
+
+button:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-radius: 8px;
+	background: #ffffff;
+	box-shadow:  3px 3px 12px #afafaf,
+							-3px -3px 12px #ffffff;
 }
 
 label {
@@ -42,22 +84,4 @@ input, button, select, textarea {
 
 input:disabled {
 	color: #ccc;
-}
-
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:disabled {
-	color: #999;
-}
-
-button:not(:disabled):active {
-	background-color: #ddd;
-}
-
-button:focus {
-	border-color: #666;
 }
