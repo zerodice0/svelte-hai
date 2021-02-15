@@ -15,7 +15,7 @@
 		<div class="body">
 			<div class="icon-input">
 				<div class="icon">
-					<AccountBoxIcon size={"2.5em"}/>
+					<AccountBoxIcon size={"2rem"}/>
 				</div>
 				<input type="text"
 					placeholder="login id"/>
@@ -23,7 +23,7 @@
 			
 			<div class="icon-input">
 				<div class="icon">
-					<KeyIcon size={"2.5em"}/>
+					<KeyIcon size={"2em"}/>
 				</div>
 				<input type="text"
 					placeholder="password"/>
@@ -48,7 +48,6 @@
 		.simple-modal {
 			display: flexbox;
 			width: 20rem;
-			/* border: 3px solid black; */
 			border-radius: 7px;
 			padding: 7px;
 			background: #ededed;
@@ -77,6 +76,15 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				border-radius: 5px;
+				background: #ffffff;
+				box-shadow:  3px 3px 12px #afafaf,
+										-3px -3px 12px #ffffff;
+				margin-left: 1rem;
+				margin-right: 1rem;
+				margin-bottom: 1rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
 
 				input, button {
 					margin: 0.5rem 1rem 0.5rem 1rem;
@@ -90,14 +98,9 @@
 					margin-left: 1rem;
 					margin-right: 1rem;
 
-					border-radius: 5px;
-						background: #ffffff;
-						box-shadow:  3px 3px 12px #afafaf,
-												-3px -3px 12px #ffffff;
-
 					input {
-						margin-left: 0.2rem;
-						margin-right: 0.4rem;
+						margin-left: 0.7rem;
+						margin-right: 0rem;
 						width: 100%;
 					}
 				}

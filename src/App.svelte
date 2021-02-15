@@ -1,6 +1,7 @@
 <script>
 	import {Router, Link, Route} from 'svelte-routing'
 	import Login from './routes/Login.svelte'
+	import Reviews from './routes/Reviews.svelte'
 	import About from './routes/About.svelte'
 	export let url = "";
 </script>
@@ -8,10 +9,12 @@
 <Router url={url}>
 	<nav class="navigation">
 		<Link class="link" to="/">Home</Link>
+		<Link class="link" to="/reviews">Reviews</Link>
 		<Link class="link" to="/about">About</Link>
 	</nav>
 	<div class="router-content">
 		<Route path="/" component="{Login}"/>
+		<Route path="/reviews" component="{Reviews}"/>
 		<Route path="/about" component="{About}"/>
 	</div>
 </Router>
@@ -28,8 +31,6 @@
 		background: #ededed;
 		box-shadow: inset 14px 14px 28px #afafaf,
 					inset -14px -14px 28px #ffffff;
-	
-
 	}
 
 

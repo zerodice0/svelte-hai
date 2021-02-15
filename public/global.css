@@ -51,8 +51,8 @@ button {
 
 button:active {
 	background: #84c5e1;
-	box-shadow:  0px 0px 8px #6292a7,
-							-0px -0px 8px #9cd8f3;
+	box-shadow:  0px 0px 2px #6292a7,
+							-0px -0px 2px #9cd8f3;
 	color: #ffffff;
 }
 
